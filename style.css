@@ -1,6 +1,9 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .grid-container {
@@ -46,12 +49,15 @@ footer {
 
 ul {
     list-style: none;
-    gap: 15px;
+    gap: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
+    padding: 0px;
 }
 
 a {
@@ -63,6 +69,8 @@ header img {
     height: 120px;
     width: 120px;
     border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 4px;
 }
 
 header {
@@ -71,16 +79,42 @@ header {
     margin: 0 auto;
 }
 
-.logo {
-    
+header img:hover {
+    animation: rotation infinite 2s linear;
+
+}
+
+.form {
+    margin-top: 40px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+}
+
+label {
+    font-size: 18px;
 }
 
 h1 {
     text-align: center;
     align-items: center;
+    margin-top: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 5px;
 }
 
-.form {}
+
+
+@keyframes rotation {
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 @media (max-width: 768px) {
     .grid-container {
