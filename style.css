@@ -1,16 +1,14 @@
 body {
     display: flex;
     justify-content: center;
-
 }
 
 .grid-container {
-
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-areas:
         "nav nav"
-        "header header"
+        "header-container header-container"
         "aside main"
         "footer footer";
 
@@ -21,8 +19,8 @@ nav {
     grid-area: nav;
 }
 
-header {
-    grid-area: header;
+.header-container {
+    grid-area: header-container;
 }
 
 aside {
@@ -46,7 +44,6 @@ footer {
     border: 1px solid black;
 }
 
-
 ul {
     list-style: none;
     gap: 15px;
@@ -60,11 +57,6 @@ ul {
 a {
     text-decoration: none;
     color: black;
-
-}
-
-.header-container {
-    grid-area: header;
 }
 
 header img {
@@ -73,14 +65,31 @@ header img {
     border-radius: 50%;
 }
 
-.logo {
+header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    
 }
 
 h1 {
     text-align: center;
     align-items: center;
-    color: blue;
 }
 
+.form {}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            'nav'
+            'header-container'
+            'main'
+            'aside'
+            'footer';
+        grid-template-columns: 1fr;
+    }
+}
