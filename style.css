@@ -1,6 +1,3 @@
-
-
-
 body {
     display: flex;
     justify-content: center;
@@ -11,11 +8,11 @@ body {
 
     display: grid;
     grid-template-columns: 1fr, 1fr;
-    grid-template-areas: 
-    "nav nav"
-    "header header"
-    "aside main"
-    "footer footer";
+    grid-template-areas:
+        "nav nav"
+        "header header"
+        "aside main"
+        "footer footer";
 
     max-width: 1024px;
 }
@@ -41,6 +38,47 @@ footer {
 }
 
 
-nav, header, aside, main, footer {
+nav,
+header,
+aside,
+main,
+footer {
     border: 1px solid black;
+}
+
+
+ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.header-container {
+    grid-area: header;
+}
+
+header img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
 }
