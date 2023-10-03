@@ -1,0 +1,46 @@
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: 
+    "nav nav"
+    "header header"
+    "aside main"
+    "footer footer";
+
+    max-width: 1024px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+nav, header, aside, main, footer {
+    border: 1px solid black;
+}
