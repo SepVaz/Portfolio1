@@ -65,24 +65,40 @@ a {
     color: black;
 }
 
-header img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 21px;
-}
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    background-color: rgb(23, 37, 25);
 }
 
 header img:hover {
     animation: rotation infinite 2s linear;
+}
 
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+    color: rgb(255, 252, 249);
+}
+
+main {
+    width: 600px;
+}
+
+.hero-image {
+    background-image: url(images/hero-image.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -5px;
+    position: relative;
+    height: 300px;
+    width: 100%;
 }
 
 .form-container {
@@ -104,7 +120,7 @@ input {
 i.fa-solid.fa-magnifying-glass {
     padding-right: 5px;
     padding-left: 5px;
-    color: white;
+    color: rgb(12, 12, 12);
 }
 
 label {
@@ -115,28 +131,23 @@ input#textruta {
     margin-top: 10px;
 }
 
-h1 {
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 5px;
+button[type="submit"] {
+    height: 20px;
+
 }
 
-.hero-image {
-    background-image: url(/images/hero-image.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: -5px;
-    position: relative;
-    height: 300px;
-    width: 100%;
+button.submit {
+    height: 24px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    
 }
 
-main {
-    width: 600px;
-}
+
+
+
+
+
 
 @keyframes rotation {
 
