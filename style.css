@@ -1,5 +1,5 @@
 body {
-    display: flex; 
+    display: flex;
     justify-content: center;
     margin: 0px;
     padding: 0px;
@@ -63,7 +63,8 @@ nav {
 }
 
 .logo {
-    animation: rotation 2s infinite linear;
+    animation: fade-in 5s ease-in;
+    margin: 5px;
 }
 
 .navbar {
@@ -73,11 +74,16 @@ nav {
     margin: 0;
     padding: 0;
     flex-grow: 1;
-    
+
 }
 
 .navbar li {
     margin: 0 15px;
+}
+
+.hamburger {
+    display: none;
+    margin: 5px;
 }
 
 a {
@@ -90,6 +96,14 @@ header {
     justify-content: center;
     margin: 0 auto;
     background-color: rgb(23, 37, 25);
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside p {
+    margin: 10px;
 }
 
 header img:hover {
@@ -113,7 +127,7 @@ h1 {
     background-position-y: -5px;
     position: relative;
     height: 300px;
-    width: 100%;
+    width: 600px;
 }
 
 .form-container {
@@ -160,11 +174,12 @@ button.submit {
 
 
 .timeline {
-    width: 800px;
+    width: 600px;
     height: 20px;
     list-style: none;
     text-align: justify;
     margin: 80px auto;
+    padding: 0;
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(191, 128, 11, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(191, 128, 11, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
 }
@@ -188,6 +203,7 @@ button.submit {
 
 .timeline li:hover {
     animation: pop-up 0.5s ease-in-out forwards;
+    cursor: pointer;
 }
 
 .timeline li:before {
@@ -230,37 +246,41 @@ button.submit {
 
 }
 
-@keyframes rotation {
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
 
     100% {
-        transform: rotate(360deg);
+        opacity: 1;
     }
 
 }
 
 @keyframes pop-up {
 
-0% {
-    transform: scale(100%);
-}
+    0% {
+        transform: scale(100%);
+    }
 
-100% {
-    transform: scale(400%);
-}
+    100% {
+        transform: scale(150%);
+    }
 
 }
 
 @media screen and (max-width: 1024px) {
     .grid-container {
         display: grid;
-      max-width: 768px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-          "nav nav"
-          "header-container header-container"
-          "aside main"
-          "footer footer";
-        
+        max-width: 768px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "nav nav"
+            "header-container header-container"
+            "aside main"
+            "footer footer";
+
     }
 
     .timeline {
@@ -281,19 +301,22 @@ button.submit {
             'footer';
     }
 
-            .timeline {
-                width: 300px;
-            }
-
-        
+    .timeline {
+        width: 300px;
     }
-.nav-bar {
-    justify-content: start;
-}
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+    }
+
     .hero-image {
-
+        width: 400px;
+        height: 150px;
     }
 
 
 }
-
