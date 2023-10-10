@@ -253,15 +253,31 @@ button.submit {
 
 }
 
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+      max-width: 768px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          "nav nav"
+          "header-container header-container"
+          "aside main"
+          "footer footer";
+        
+    }
+}
+
 @media (max-width: 768px) {
     .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-areas:
             'nav'
             'header-container'
             'main'
             'aside'
             'footer';
-        grid-template-columns: 1fr;
+        
     }
 }
 
