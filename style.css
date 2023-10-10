@@ -13,6 +13,7 @@ body {
         "nav nav"
         "header-container header-container"
         "aside main"
+        "main2 main2"
         "footer footer";
 
     max-width: 1024px;
@@ -47,6 +48,7 @@ nav,
 header,
 aside,
 main,
+.main2,
 footer {
     border: 1px solid black;
 }
@@ -172,6 +174,43 @@ button.submit {
 
 }
 
+.main2 {
+    grid-area: main2;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.card-container {
+    border: 1px solid;
+    width: 250px;
+    margin: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(23, 37, 25);
+    background-color: rgb(23, 37, 25);
+    color: white;
+    border: none;
+}
+
+.card-container img {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-bottom: 2px solid rgb(78, 125, 85);;
+}
+
+.card-container h3 {
+    margin: 0px 10px 10px 15px;
+    padding-top: 10px;
+    letter-spacing: 3px;
+}
+
+.card-container p {
+    margin: 0px 10px 10px 15px;
+    padding-bottom: 10px;
+}
 
 .timeline {
     width: 600px;
@@ -279,6 +318,7 @@ button.submit {
             "nav nav"
             "header-container header-container"
             "aside main"
+            "main2 main2"
             "footer footer";
 
     }
@@ -298,6 +338,7 @@ button.submit {
             'header-container'
             'main'
             'aside'
+            'main2'
             'footer';
     }
 
