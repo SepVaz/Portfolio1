@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: flex; 
     justify-content: center;
     margin: 0px;
     padding: 0px;
@@ -73,6 +73,7 @@ nav {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+    
 }
 
 .navbar li {
@@ -102,10 +103,6 @@ h1 {
     letter-spacing: 5px;
     font-size: 50px;
     color: rgb(255, 252, 249);
-}
-
-main {
-    width: 600px;
 }
 
 .hero-image {
@@ -253,15 +250,50 @@ button.submit {
 
 }
 
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+      max-width: 768px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          "nav nav"
+          "header-container header-container"
+          "aside main"
+          "footer footer";
+        
+    }
+
+    .timeline {
+        width: 600px;
+    }
+}
+
 @media (max-width: 768px) {
     .grid-container {
+        display: grid;
+        max-width: 400px;
+        grid-template-columns: 1fr;
         grid-template-areas:
             'nav'
             'header-container'
             'main'
             'aside'
             'footer';
-        grid-template-columns: 1fr;
     }
+
+            .timeline {
+                width: 300px;
+            }
+
+        
+    }
+.nav-bar {
+    justify-content: start;
+}
+    .hero-image {
+
+    }
+
+
 }
 
