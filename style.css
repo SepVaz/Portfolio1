@@ -35,7 +35,9 @@ nav {
 aside {
     grid-area: aside;
     border-bottom: 1px solid grey;
-    border-left: 1px solid grey
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+
 }
 
 main {
@@ -318,8 +320,6 @@ button.submit {
     top: 0;
     margin-top: -10px;
     transform: translate(-50%, -100%);
-
-
 }
 
 @keyframes fade-in {
@@ -356,6 +356,7 @@ button.submit {
     .grid-container {
         display: grid;
         max-width: 768px;
+        margin-right: 144px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "nav nav"
@@ -366,12 +367,26 @@ button.submit {
 
     }
 
+    .hero-image {
+        height: 364.91px;
+    }
+
+    aside h2 {
+        margin-left: 20px;
+    }
+
+    .logo {
+        padding-top: 25px;
+        margin-right: 20px;
+    }
+
+
     .timeline {
         width: 600px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .grid-container {
         display: grid;
         max-width: 400px;
@@ -393,6 +408,10 @@ button.submit {
         display: block;
     }
 
+    .hamburger img {
+        width: 30px;
+    }
+
     .navbar {
         display: none;
     }
@@ -402,5 +421,23 @@ button.submit {
         height: 150px;
     }
 
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-container p h2 {
+        font-size: smaller;
+    }
+
+    .hero-image {
+        width: 515px;
+        background-position-y: -40px;
+    }
+
+    .logo {
+        padding-bottom: 30px;
+    }
 
 }
