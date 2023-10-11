@@ -3,7 +3,7 @@ body {
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bitter', serif;
 }
 
 .grid-container {
@@ -25,6 +25,7 @@ body {
 
 nav {
     display: flex;
+    border: solid 1px rgb(197, 189, 189);
 }
 
 .header-container {
@@ -33,10 +34,13 @@ nav {
 
 aside {
     grid-area: aside;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey
 }
 
 main {
     grid-area: main;
+    border-bottom: 1px solid grey;
 }
 
 footer {
@@ -50,10 +54,11 @@ aside,
 main,
 .main2,
 footer {
-    border: 1px solid black;
+    /*     border: 1px solid black;
+ */
 }
 
-nav img {
+aside img {
     width: 30px;
 }
 
@@ -62,11 +67,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 40px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .logo {
     animation: fade-in 5s ease-in;
     margin: 5px;
+    padding-left: 5px;
+    margin-top: 30px;
 }
 
 .navbar {
@@ -76,6 +88,7 @@ nav {
     margin: 0;
     padding: 0;
     flex-grow: 1;
+    font-weight: 800;
 
 }
 
@@ -97,15 +110,26 @@ header {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgb(23, 37, 25);
+    background-color: rgba(63, 119, 84, 255)
 }
 
 aside h2 {
     text-align: center;
+    letter-spacing: 1px;
+    margin-top: 40px;
 }
 
 aside p {
     margin: 10px;
+    font-weight: 800;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header img:hover {
@@ -115,9 +139,10 @@ header img:hover {
 h1 {
     text-align: center;
     margin-top: 30px;
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 5px;
-    font-size: 50px;
+    font-family: 'Bitter', serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 40px;
     color: rgb(255, 252, 249);
 }
 
@@ -164,7 +189,6 @@ input#textruta {
 
 button[type="submit"] {
     height: 20px;
-
 }
 
 button.submit {
@@ -176,12 +200,24 @@ button.submit {
 
 .main2 {
     grid-area: main2;
+    background-color: rgb(221, 233, 222);
+
 }
+
 .cards {
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
+
+.card-container:hover {
+    cursor: pointer;
+    animation: bounce 0.5s forwards;
+}
+
+
 .card-container {
     border: 1px solid;
     width: 250px;
@@ -189,22 +225,23 @@ button.submit {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 2px 2px 4px rgb(23, 37, 25);
-    background-color: rgb(23, 37, 25);
+    background-color: rgba(63, 119, 84, 255);
     color: white;
     border: none;
+   
 }
 
 .card-container img {
     width: 100%;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    border-bottom: 2px solid rgb(78, 125, 85);;
+    border-bottom: 2px solid rgb(164, 194, 168);
 }
 
 .card-container h3 {
     margin: 0px 10px 10px 15px;
     padding-top: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .card-container p {
@@ -219,8 +256,8 @@ button.submit {
     text-align: justify;
     margin: 80px auto;
     padding: 0;
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgba(191, 128, 11, 1)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgba(191, 128, 11, 1) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(45%, rgba(255, 255, 255, 0)), color-stop(51%, rgb(52, 77, 52)), color-stop(57%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, rgb(164, 194, 168) 51%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
 }
 
 .timeline:after {
@@ -233,7 +270,7 @@ button.submit {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: #F2BB13;
+    background: rgba(63, 119, 84, 255);
     text-align: center;
     line-height: 1.2;
     position: relative;
@@ -307,6 +344,12 @@ button.submit {
         transform: scale(150%);
     }
 
+}
+
+@keyframes bounce {
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 @media screen and (max-width: 1024px) {
