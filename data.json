@@ -1,0 +1,34 @@
+{
+    "books": [
+    {
+        "titel": "Djungelboken",
+        "genre": "barn",
+        "beskrivning": "klassiker",
+        "bild": "images/brain.jpg"
+    },
+    {
+        "titel": "Lejonkungen",
+        "genre": "barn",
+        "beskrivning": "klassiker",
+        "bild": "images/brain.jpg"
+    },
+    {
+        "titel": "Trollkarlen från OZ",
+        "genre": "barn",
+        "beskrivning": "klassiker",
+        "bild": "images/brain.jpg"
+    },
+    {
+        "titel": "Alladin",
+        "genre": "barn",
+        "beskrivning": "klassiker",
+        "bild": "images/brain.jpg"
+    },
+    {
+        "titel": "Starwars",
+        "genre": "barn",
+        "beskrivning": "klassiker",
+        "bild": "images/brain.jpg"
+    }
+]
+}
