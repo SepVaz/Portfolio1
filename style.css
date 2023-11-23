@@ -322,6 +322,15 @@ button.submit {
     transform: translate(-50%, -100%);
 }
 
+#bookForm img {
+    width: 200px;
+}
+
+#bookForm button {
+    width: 100px;
+    height: 100px;
+}
+
 @keyframes fade-in {
 
     0% {
