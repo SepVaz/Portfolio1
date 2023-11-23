@@ -1,24 +1,36 @@
+const bookForm = document.getElementById("bookForm");
 
+fetch("books.json")
+  .then((res) => res.json())
 
-const bookForm = document.getElementById('bookForm');
+  .then((data) => {
+    data.books.forEach((book) => {
+      const bookDiv = document.createElement("div");
 
-fetch('books.json')
+      const image = document.createElement("img");
+      image.src = book.bild;
+      bookDiv.appendChild(image);
 
-    .then(res => res.json())
+      const titleLabel = document.createElement("label");
+      titleLabel.textContent = "Titel: " + book.titel;
+      bookDiv.appendChild(titleLabel);
 
-    .then(data => {
-        data.books.forEach(book => {
-            const bookDiv = document.createElement('div');
+      const addButton = document.createElement("button");
+      addButton.type = "button";
+      addButton.textContent = "Lägg till ny bok";
+      addButton.addEventListener("click", function () {
+       
+      });
 
-            const titleLabel = document.createElement('label');
-            titleLabel.textContent = 'Titel: ' + book.titel;
-            bookDiv.appendChild(titleLabel);
+      bookDiv.appendChild(addButton);
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.textContent = "Ta bort";
+      removeButton.addEventListener("click", function () {
+      
+      });
+      bookDiv.appendChild(removeButton);
 
-            bookForm.appendChild(bookDiv);
-        });
-    })
-   
-
-
-
-  
+      bookForm.appendChild(bookDiv);
+    });
+  });

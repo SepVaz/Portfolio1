@@ -327,9 +327,11 @@ button.submit {
 }
 
 #bookForm button {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
+
+
 
 @keyframes fade-in {
 
