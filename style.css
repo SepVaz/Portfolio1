@@ -331,6 +331,13 @@ button.submit {
     height: 50px;
 }
 
+#bookForm {
+    display: flex; 
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 
 @keyframes fade-in {
