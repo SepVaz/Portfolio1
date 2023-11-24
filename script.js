@@ -16,10 +16,17 @@ fetch("books.json")
       bookDiv.appendChild(titleLabel);
 
       const addButton = document.createElement("button");
+      const antalVaror = document.createElement("p");
+      bookDiv.appendChild(antalVaror)
       addButton.type = "button";
-      addButton.textContent = "Lägg till ny bok";
+      addButton.textContent = "Lägg till";
+      let count = 0;
+      antalVaror.textContent = "Antal tillagda: " + count;
       addButton.addEventListener("click", function () {
-       
+
+        count++;
+        antalVaror.textContent = "Antal tillagda: " + count;
+
       });
 
       bookDiv.appendChild(addButton);
@@ -27,7 +34,13 @@ fetch("books.json")
       removeButton.type = "button";
       removeButton.textContent = "Ta bort";
       removeButton.addEventListener("click", function () {
-      
+
+        count--;
+        if (count <= 0) {
+          count = 0;
+        }
+        antalVaror.textContent = "Antal tillagda: " + count;
+
       });
       bookDiv.appendChild(removeButton);
 
