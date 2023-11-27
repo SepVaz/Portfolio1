@@ -2,33 +2,76 @@
     "books": [
     {
         "titel": "Djungelboken",
-        "genre": "barn",
-        "beskrivning": "klassiker",
+        "genre": "Barn",
+        "beskrivning": "Klassiker",
         "bild": "images/djungelboken.jpg"
     },
     {
         "titel": "Lejonkungen",
-        "genre": "barn",
-        "beskrivning": "klassiker",
+        "genre": "Barn",
+        "beskrivning": "Klassiker",
         "bild": "images/lejonkungen.jpg"
     },
     {
         "titel": "Trollkarlen från OZ",
-        "genre": "barn",
-        "beskrivning": "klassiker",
+        "genre": "Barn",
+        "beskrivning": "Klassiker",
         "bild": "images/trollkarlen från oz.jpg"
     },
     {
         "titel": "Aladdin",
-        "genre": "barn",
-        "beskrivning": "klassiker",
+        "genre": "Barn",
+        "beskrivning": "Klassiker",
         "bild": "images/aladdin.jpg"
     },
     {
         "titel": "Starwars",
-        "genre": "barn",
-        "beskrivning": "klassiker",
+        "genre": "Sci-Fi",
+        "beskrivning": "Klassiker",
         "bild": "images/starwars.png"
+    },
+    {
+        "titel": "Sagan om ringen",
+        "genre": "Äventyr",
+        "beskrivning": "Klassiker",
+        "bild": "images/saganomringen.jpg"
+    },
+    {
+        "titel": "Ondskan",
+        "genre": "Thriller",
+        "beskrivning": "Klassiker",
+        "bild": "images/ondskan.jpg"
+    },
+    {
+        "titel": "Harry Potter",
+        "genre": "Barn",
+        "beskrivning": "Klassiker",
+        "bild": "images/harrypotter.png"
+    },
+    {
+        "titel": "Zlatan",
+        "genre": "Självbiografi",
+        "beskrivning": "Klassiker",
+        "bild": "images/zlatan.jpg"
+    },
+    {
+        "titel": "Spiderman",
+        "genre": "Sci-fi",
+        "beskrivning": "Klassiker",
+        "bild": "images/spiderman.jpg"
+    },
+    {
+        "titel": "Dune",
+        "genre": "Science fiction",
+        "beskrivning": "En episk berättelse om politik och makt i en fjärran galax",
+        "bild": "images/dune.png"
+    },
+    {
+        "titel": "Sherlock Holmes",
+        "genre": "Deckare",
+        "beskrivning": "Berömda mysterier av den legendariska detektiven",
+        "bild": "images/sherlock.jpg"
     }
+    
 ]
 }

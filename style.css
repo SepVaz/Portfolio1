@@ -229,7 +229,7 @@ button.submit {
     background-color: rgba(63, 119, 84, 255);
     color: white;
     border: none;
-   
+
 }
 
 .card-container img {
@@ -324,6 +324,8 @@ button.submit {
 #bookForm img {
     width: 200px;
     height: 112px;
+    object-fit: cover;
+    
 }
 
 #bookForm button {
@@ -332,17 +334,22 @@ button.submit {
 }
 
 #bookForm {
-    display: flex; 
+    display: flex;
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-
+#bookForm div {
+    
+    width: 200px;
+    text-align: center;
+    font-weight: 900;
+   
+}
 
 #bookForm button {
-    display: inli;
-
+    
 }
 
 
@@ -452,6 +459,7 @@ button.submit {
         flex-direction: column;
         align-items: center;
     }
+
     .card-container p h2 {
         font-size: smaller;
     }

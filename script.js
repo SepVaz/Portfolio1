@@ -6,6 +6,7 @@ fetch("books.json")
   .then((data) => {
     data.books.forEach((book) => {
       const bookDiv = document.createElement("div");
+      const buttonDiv = document.createElement("div");
 
       const image = document.createElement("img");
       image.src = book.bild;
@@ -14,6 +15,17 @@ fetch("books.json")
       const titleLabel = document.createElement("label");
       titleLabel.textContent = "Titel: " + book.titel;
       bookDiv.appendChild(titleLabel);
+      
+      const beskrivning = document.createElement("p")
+      beskrivning.textContent = " Beskrivning: " + book.beskrivning;
+      bookDiv.appendChild(beskrivning)
+      
+      const genreLabel = document.createElement("p")
+      genreLabel.textContent = " Genre: " + book.genre;
+      bookDiv.appendChild(genreLabel)
+
+      
+
 
       const addButton = document.createElement("button");
       const antalVaror = document.createElement("p");
@@ -29,7 +41,7 @@ fetch("books.json")
 
       });
 
-      bookDiv.appendChild(addButton);
+      buttonDiv.appendChild(addButton);
       const removeButton = document.createElement("button");
       removeButton.type = "button";
       removeButton.textContent = "Ta bort";
@@ -42,8 +54,17 @@ fetch("books.json")
         antalVaror.textContent = "Antal tillagda: " + count;
 
       });
-      bookDiv.appendChild(removeButton);
+      buttonDiv.appendChild(removeButton);  
+      bookDiv.appendChild(buttonDiv);
 
       bookForm.appendChild(bookDiv);
     });
+
+    
+    
   });
+    
+  
+  
+
+
