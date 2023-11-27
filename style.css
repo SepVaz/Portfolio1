@@ -333,6 +333,7 @@ button.submit {
     height: 50px;
     border-radius: 2px;
     margin-right: 10px;
+    cursor: pointer;
 
 
 }
