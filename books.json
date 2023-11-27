@@ -4,31 +4,31 @@
         "titel": "Djungelboken",
         "genre": "barn",
         "beskrivning": "klassiker",
-        "bild": "images/brain.jpg"
+        "bild": "images/djungelboken.jpg"
     },
     {
         "titel": "Lejonkungen",
         "genre": "barn",
         "beskrivning": "klassiker",
-        "bild": "images/brain.jpg"
+        "bild": "images/lejonkungen.jpg"
     },
     {
         "titel": "Trollkarlen från OZ",
         "genre": "barn",
         "beskrivning": "klassiker",
-        "bild": "images/brain.jpg"
+        "bild": "images/trollkarlen från oz.jpg"
     },
     {
-        "titel": "Alladin",
+        "titel": "Aladdin",
         "genre": "barn",
         "beskrivning": "klassiker",
-        "bild": "images/brain.jpg"
+        "bild": "images/aladdin.jpg"
     },
     {
         "titel": "Starwars",
         "genre": "barn",
         "beskrivning": "klassiker",
-        "bild": "images/brain.jpg"
+        "bild": "images/starwars.png"
     }
 ]
 }

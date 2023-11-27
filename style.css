@@ -37,7 +37,6 @@ aside {
     border-bottom: 1px solid grey;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
-
 }
 
 main {
@@ -324,6 +323,7 @@ button.submit {
 
 #bookForm img {
     width: 200px;
+    height: 112px;
 }
 
 #bookForm button {
@@ -336,6 +336,13 @@ button.submit {
     gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+
+
+#bookForm button {
+    display: inli;
+
 }
 
 
