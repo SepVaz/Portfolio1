@@ -325,12 +325,16 @@ button.submit {
     width: 200px;
     height: 112px;
     object-fit: cover;
-    
+
 }
 
 #bookForm button {
     width: 50px;
     height: 50px;
+    border-radius: 2px;
+    margin-right: 10px;
+
+
 }
 
 #bookForm {
@@ -341,11 +345,32 @@ button.submit {
 }
 
 #bookForm div {
-    
     width: 200px;
     text-align: center;
+}
+
+.book-title {
     font-weight: 900;
-   
+}
+
+.book-name {
+    color: rgb(59, 59, 196);
+}
+
+.book-desc {
+    font-weight: 900;
+}
+
+.desc-text {
+    font-weight: 300;
+}
+
+.book-genre {
+    font-weight: 900;
+}
+
+.genre-text {
+    font-weight: 300;
 }
 
 @keyframes fade-in {

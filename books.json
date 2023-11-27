@@ -1,77 +1,76 @@
 {
     "books": [
-    {
-        "titel": "Djungelboken",
-        "genre": "Barn",
-        "beskrivning": "Klassiker",
-        "bild": "images/djungelboken.jpg"
-    },
-    {
-        "titel": "Lejonkungen",
-        "genre": "Barn",
-        "beskrivning": "Klassiker",
-        "bild": "images/lejonkungen.jpg"
-    },
-    {
-        "titel": "Trollkarlen från OZ",
-        "genre": "Barn",
-        "beskrivning": "Klassiker",
-        "bild": "images/trollkarlen från oz.jpg"
-    },
-    {
-        "titel": "Aladdin",
-        "genre": "Barn",
-        "beskrivning": "Klassiker",
-        "bild": "images/aladdin.jpg"
-    },
-    {
-        "titel": "Starwars",
-        "genre": "Sci-Fi",
-        "beskrivning": "Klassiker",
-        "bild": "images/starwars.png"
-    },
-    {
-        "titel": "Sagan om ringen",
-        "genre": "Äventyr",
-        "beskrivning": "Klassiker",
-        "bild": "images/saganomringen.jpg"
-    },
-    {
-        "titel": "Ondskan",
-        "genre": "Thriller",
-        "beskrivning": "Klassiker",
-        "bild": "images/ondskan.jpg"
-    },
-    {
-        "titel": "Harry Potter",
-        "genre": "Barn",
-        "beskrivning": "Klassiker",
-        "bild": "images/harrypotter.png"
-    },
-    {
-        "titel": "Zlatan",
-        "genre": "Självbiografi",
-        "beskrivning": "Klassiker",
-        "bild": "images/zlatan.jpg"
-    },
-    {
-        "titel": "Spiderman",
-        "genre": "Sci-fi",
-        "beskrivning": "Klassiker",
-        "bild": "images/spiderman.jpg"
-    },
-    {
-        "titel": "Dune",
-        "genre": "Science fiction",
-        "beskrivning": "En episk berättelse om politik och makt i en fjärran galax",
-        "bild": "images/dune.png"
-    },
-    {
-        "titel": "Sherlock Holmes",
-        "genre": "Deckare",
-        "beskrivning": "Berömda mysterier av den legendariska detektiven",
-        "bild": "images/sherlock.jpg"
-    }
-    
-]
+        {
+            "titel": "Djungelboken",
+            "genre": "Barn",
+            "beskrivning": "Äventyr i djungeln med Mowgli och hans djurvänner.",
+            "bild": "images/djungelboken.jpg"
+        },
+        {
+            "titel": "Lejonkungen",
+            "genre": "Barn",
+            "beskrivning": "Berättelsen en ung lejonprins och hans väg till tronen.",
+            "bild": "images/lejonkungen.jpg"
+        },
+        {
+            "titel": "Trollkarlen från OZ",
+            "genre": "Barn",
+            "beskrivning": "Dorothy och vänner söker trollkarlen i magiska landet Oz.",
+            "bild": "images/trollkarlen från oz.jpg"
+        },
+        {
+            "titel": "Aladdin",
+            "genre": "Barn",
+            "beskrivning": "En fattig pojkes äventyr med en magisk lampa och en ande.",
+            "bild": "images/aladdin.jpg"
+        },
+        {
+            "titel": "Starwars",
+            "genre": "Sci-Fi",
+            "beskrivning": "Rymdsaga om kampen om gott & ont i en avlägsen galax.",
+            "bild": "images/starwars.png"
+        },
+        {
+            "titel": "Sagan om ringen",
+            "genre": "Äventyr",
+            "beskrivning": "Episk resa för att förstöra en kraftfull ring i Midgård.",
+            "bild": "images/saganomringen.jpg"
+        },
+        {
+            "titel": "Ondskan",
+            "genre": "Thriller",
+            "beskrivning": "En ung mans kamp mot skolans och livets ondska.",
+            "bild": "images/ondskan.jpg"
+        },
+        {
+            "titel": "Harry Potter",
+            "genre": "Barn",
+            "beskrivning": "En ung trollkarls äventyr och utmaningar på Hogwarts.",
+            "bild": "images/harrypotter.png"
+        },
+        {
+            "titel": "Zlatan",
+            "genre": "Självbiografi",
+            "beskrivning": "Zlatan Ibrahimovićs resa från Malmös gator till fotbollens toppskikt.",
+            "bild": "images/zlatan.jpg"
+        },
+        {
+            "titel": "Spiderman",
+            "genre": "Sci-fi",
+            "beskrivning": "Peter Parkers liv förändras efter ett spindelbett som ger övermänskliga krafter.",
+            "bild": "images/spiderman.jpg"
+        },
+        {
+            "titel": "Dune",
+            "genre": "Science fiction",
+            "beskrivning": "En ung adelsmans strävan efter rättvisa och makt på en ökenplanet.",
+            "bild": "images/dune.png"
+        },
+        {
+            "titel": "Sherlock Holmes",
+            "genre": "Deckare",
+            "beskrivning": "Berömda mysterier och brottsutredningar av den legendariska detektiven.",
+            "bild": "images/sherlock.jpg"
+        }
+    ]
 }

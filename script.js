@@ -12,19 +12,25 @@ fetch("books.json")
       image.src = book.bild;
       bookDiv.appendChild(image);
 
-      const titleLabel = document.createElement("label");
-      titleLabel.textContent = "Titel: " + book.titel;
-      bookDiv.appendChild(titleLabel);
-      
+      const titleLabel = document.createElement("div");
+
+      const titleDiv = document.createElement("div");
+      titleDiv.className = 'book-title';
+      titleDiv.innerHTML = `Titel: <span class="book-name">${book.titel}</span>`;
+      bookDiv.appendChild(titleDiv);
+
+
       const beskrivning = document.createElement("p")
-      beskrivning.textContent = " Beskrivning: " + book.beskrivning;
+      beskrivning.className = 'book-desc'
+      beskrivning.innerHTML = `Beskrivning: <span class="desc-text">${book.beskrivning}</span>`;
       bookDiv.appendChild(beskrivning)
-      
+
       const genreLabel = document.createElement("p")
-      genreLabel.textContent = " Genre: " + book.genre;
+      genreLabel.className = 'book-genre'
+      genreLabel.innerHTML = `Genre: <span class="genre-text">${book.genre}</span>`;
       bookDiv.appendChild(genreLabel)
 
-      
+
 
 
       const addButton = document.createElement("button");
@@ -54,17 +60,17 @@ fetch("books.json")
         antalVaror.textContent = "Antal tillagda: " + count;
 
       });
-      buttonDiv.appendChild(removeButton);  
+      buttonDiv.appendChild(removeButton);
       bookDiv.appendChild(buttonDiv);
 
       bookForm.appendChild(bookDiv);
     });
 
-    
-    
+
+
   });
-    
-  
-  
+
+
+
 
 
