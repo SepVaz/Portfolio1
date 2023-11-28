@@ -23,54 +23,6 @@
             "genre": "Barn",
             "beskrivning": "En fattig pojkes äventyr med en magisk lampa och en ande.",
             "bild": "images/aladdin.jpg"
-        },
-        {
-            "titel": "Starwars",
-            "genre": "Sci-Fi",
-            "beskrivning": "Rymdsaga om kampen om gott & ont i en avlägsen galax.",
-            "bild": "images/starwars.png"
-        },
-        {
-            "titel": "Sagan om ringen",
-            "genre": "Äventyr",
-            "beskrivning": "Episk resa för att förstöra en kraftfull ring i Midgård.",
-            "bild": "images/saganomringen.jpg"
-        },
-        {
-            "titel": "Ondskan",
-            "genre": "Thriller",
-            "beskrivning": "En ung mans kamp mot skolans och livets ondska.",
-            "bild": "images/ondskan.jpg"
-        },
-        {
-            "titel": "Harry Potter",
-            "genre": "Barn",
-            "beskrivning": "En ung trollkarls äventyr och utmaningar på Hogwarts.",
-            "bild": "images/harrypotter.png"
-        },
-        {
-            "titel": "Zlatan",
-            "genre": "Självbiografi",
-            "beskrivning": "Zlatan Ibrahimovićs resa från Malmös gator till fotbollens toppskikt.",
-            "bild": "images/zlatan.jpg"
-        },
-        {
-            "titel": "Spiderman",
-            "genre": "Sci-fi",
-            "beskrivning": "Peter Parkers liv förändras efter ett spindelbett som ger övermänskliga krafter.",
-            "bild": "images/spiderman.jpg"
-        },
-        {
-            "titel": "Dune",
-            "genre": "Science fiction",
-            "beskrivning": "En ung adelsmans strävan efter rättvisa och makt på en ökenplanet.",
-            "bild": "images/dune.png"
-        },
-        {
-            "titel": "Sherlock Holmes",
-            "genre": "Deckare",
-            "beskrivning": "Berömda mysterier och brottsutredningar av den legendariska detektiven.",
-            "bild": "images/sherlock.jpg"
         }
     ]
 }

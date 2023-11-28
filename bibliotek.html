@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,9 @@
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="grid-container">
         <div class="grid-nav">
             <nav>
@@ -35,7 +37,7 @@
                 <h1>Hjärnkontoriska Universitetet</h1>
             </header>
         </div>
-        
+
         <aside>
             <div class="flex-container">
                 <h2>Vårt bibliotek</h2>
@@ -47,7 +49,7 @@
                 quam veniam quas autem cupiditate ut at? Hic voluptatum reprehenderit architecto tenetur voluptatem unde
                 sed laborum? Iusto molestias eum modi rerum nobis asperiores quod ab minima.</p>
         </aside>
-           
+
         <main>
             <div class="hero-image">
                 <div class="form-container">
@@ -60,16 +62,40 @@
             </div>
         </main>
         <div class="main2">
+            <form id="inputForm">
+                <label for="bookSelect">Skriv titel på boken: </label>
+                <input id="bookSelect" type="text" name="bookSelect">
+                <label for="chooseGenre">Välj genre: </label>
+                <select id="chooseGenre">
+                    <option value="Välj genre" disabled selected>Välj genre</option>
+                    <option value="Sci-Fi">Sci-fi</option>
+                    <option value="Fakta">Fakta</option>
+                    <option value="Barnböcker">Barnböcker</option>
+                    <option value="Komedi">Komedi</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Skräck">Skräck</option>
+                    <option value="Romantik">Romantik</option>
+                </select>
+                <label for="inputField">Kort beskrivning om boken: </label>
+                <textarea id="inputField" cols="30" rows="10" name="inputField"></textarea>
+                <label for="imageUrl">Ange Earl till bilden:</label>
+                <input id="imageUrl" type="text" name="imageUrl">
+                <button type="submit">Ladda upp</button>
+
+
+
+            </form>
             <div class="cards">
+
                 <form id="bookForm">
-                
+
                 </form>
-                
             </div>
+
         </div>
         <footer>
-        
-            
+
+
 
         </footer>
     </div>
@@ -80,4 +106,5 @@
 
 
 </body>
+
 </html>

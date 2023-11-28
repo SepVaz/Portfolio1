@@ -1,4 +1,13 @@
 const bookForm = document.getElementById("bookForm");
+const inputForm = document.getElementById("inputForm")
+const bookSelect = document.getElementById("bookSelect")
+const chooseGenre = document.getElementById("chooseGenre")
+const inputField = document.getElementById("inputField")
+const imageUrl = document.getElementById("imageUrl")
+
+let bookArray = ['']
+
+bookForm.appendChild(bookArray)
 
 fetch("books.json")
   .then((res) => res.json())
@@ -12,13 +21,10 @@ fetch("books.json")
       image.src = book.bild;
       bookDiv.appendChild(image);
 
-      const titleLabel = document.createElement("div");
-
       const titleDiv = document.createElement("div");
       titleDiv.className = 'book-title';
       titleDiv.innerHTML = `Titel: <span class="book-name">${book.titel}</span>`;
       bookDiv.appendChild(titleDiv);
-
 
       const beskrivning = document.createElement("p")
       beskrivning.className = 'book-desc'
@@ -30,44 +36,18 @@ fetch("books.json")
       genreLabel.innerHTML = `Genre: <span class="genre-text">${book.genre}</span>`;
       bookDiv.appendChild(genreLabel)
 
-
-
-
-      const addButton = document.createElement("button");
-      const antalVaror = document.createElement("p");
-      bookDiv.appendChild(antalVaror)
-      addButton.type = "button";
-      addButton.textContent = "Lägg till";
-      let count = 0;
-      antalVaror.textContent = "Antal tillagda: " + count;
-      addButton.addEventListener("click", function () {
-
-        count++;
-        antalVaror.textContent = "Antal tillagda: " + count;
-
-      });
-
-      buttonDiv.appendChild(addButton);
       const removeButton = document.createElement("button");
       removeButton.type = "button";
       removeButton.textContent = "Ta bort";
       removeButton.addEventListener("click", function () {
-
-        count--;
-        if (count <= 0) {
-          count = 0;
-        }
-        antalVaror.textContent = "Antal tillagda: " + count;
+        
+        bookForm.removeChild(bookDiv)
 
       });
       buttonDiv.appendChild(removeButton);
       bookDiv.appendChild(buttonDiv);
-
       bookForm.appendChild(bookDiv);
     });
-
-
-
   });
 
 
