@@ -4,10 +4,32 @@ const bookSelect = document.getElementById("bookSelect")
 const chooseGenre = document.getElementById("chooseGenre")
 const inputField = document.getElementById("inputField")
 const imageUrl = document.getElementById("imageUrl")
+const submitBtn = document.getElementById("submitBtn")
 
-let bookArray = ['']
+let bookArray = []
 
-bookForm.appendChild(bookArray)
+function showBook (book) {
+  const bookDiv = document.createElement("div")
+  const titel = document.createElement("h3")
+  titel.textContent = book.titel
+  bookDiv.appendChild(title);
+}
+
+inputForm.addEventListener("submit", function (event) {
+  event.preventDefault()
+  let newBook = {
+    titel: bookSelect.value,
+    genre: chooseGenre.value,
+    beskrivning: inputField.value,
+    bild: imageUrl.value,
+  }
+  
+  bookArray.push(newBook)
+})
+
+const addBook = document.getElementById("addBook")
+addBook.appendChild(bookArray)
+
 
 fetch("books.json")
   .then((res) => res.json())
