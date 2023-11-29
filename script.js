@@ -10,9 +10,25 @@ let bookArray = []
 
 function showBook (book) {
   const bookDiv = document.createElement("div")
-  const titel = document.createElement("h3")
-  titel.textContent = book.titel
-  bookDiv.appendChild(title);
+  const bookTitel = document.createElement("h3")
+  bookTitel.textContent = book.titel
+  bookDiv.appendChild(bookTitel);
+
+  const bookGenre = document.createElement("h3")
+  bookGenre.textContent = book.genre
+  bookDiv.appendChild(bookGenre);
+
+  const bookDesc = document.createElement("h3")
+  bookDesc.textContent = book.beskrivning
+  bookDiv.appendChild(bookDesc)
+
+  const bookBild = document.createElement("img")
+  bookBild.src = book.bild;
+  bookDiv.appendChild(bookBild)
+
+  document.getElementById("bookForm").appendChild(bookDiv)
+  
+  
 }
 
 inputForm.addEventListener("submit", function (event) {
@@ -23,13 +39,10 @@ inputForm.addEventListener("submit", function (event) {
     beskrivning: inputField.value,
     bild: imageUrl.value,
   }
-  
+
   bookArray.push(newBook)
+  showBook(newBook)
 })
-
-const addBook = document.getElementById("addBook")
-addBook.appendChild(bookArray)
-
 
 fetch("books.json")
   .then((res) => res.json())
