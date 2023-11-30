@@ -10,6 +10,7 @@ let bookArray = [];
 
 function showBook(book) {
   const bookDiv = document.createElement("div");
+  bookDiv.className = "book-div"
   const bookBild = document.createElement("img");
   bookBild.src = book.bild;
 
@@ -58,6 +59,7 @@ fetch("books.json")
   .then((data) => {
     data.books.forEach((book) => {
       const bookDiv = document.createElement("div");
+      bookDiv.className = "book-div"
       const buttonDiv = document.createElement("div");
 
       const image = document.createElement("img");
