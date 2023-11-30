@@ -7,10 +7,10 @@
             "bild": "images/djungelboken.jpg"
         },
         {
-            "titel": "Lejonkungen",
-            "genre": "Barn",
-            "beskrivning": "Berättelsen en ung lejonprins och hans väg till tronen.",
-            "bild": "images/lejonkungen.jpg"
+            "titel": "Dune",
+            "genre": "science fiction",
+            "beskrivning": "En episk berättelse om politik och makt i en fjärran galax",
+            "bild": "images/dune.png"
         },
         {
             "titel": "Trollkarlen från OZ",
@@ -19,10 +19,10 @@
             "bild": "images/trollkarlen från oz.jpg"
         },
         {
-            "titel": "Aladdin",
-            "genre": "Barn",
-            "beskrivning": "En fattig pojkes äventyr med en magisk lampa och en ande.",
-            "bild": "images/aladdin.jpg"
+            "titel": "Sherlock Holmes",
+            "genre": "deckare",
+            "beskrivning": "Berömda mysterier av den legendariska detektiven",
+            "bild": "images/sherlock.jpg"
         }
     ]
 }

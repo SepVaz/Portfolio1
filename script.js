@@ -31,7 +31,6 @@ function showBook(book) {
 
   const removeButton = document.createElement("button");
   removeButton.textContent = "Ta bort";
-  removeButton.type = "button";
   removeButton.addEventListener("click", () => {
     bookForm.removeChild(bookDiv);
   });
@@ -81,7 +80,6 @@ fetch("books.json")
       bookDiv.appendChild(genreLabel);
 
       const removeButton = document.createElement("button");
-      removeButton.type = "button";
       removeButton.textContent = "Ta bort";
       removeButton.addEventListener("click", function () {
         bookForm.removeChild(bookDiv);
