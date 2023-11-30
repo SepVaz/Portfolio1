@@ -386,9 +386,10 @@ button.submit {
     width: 300px;
 }
 
-.form-container {
+.form-container2 {
     justify-content: center;
     padding-top: 50px;
+    display: flex;
 }
 
 #inputForm label {
